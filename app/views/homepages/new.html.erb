@@ -1,0 +1,11 @@
+<br>
+<div class="the-form">
+  <h2>Are you ready?</h2>
+  <%= simple_form_for @homepage do |f| %>
+    <%= f.input :name, :label => "What is your name: " %>
+    <br>
+    <%= f.input :animal, :label => "Your favorite animal: " %>
+    <br>
+    <%= f.submit "Lets Go!" %>
+  <% end %>
+</div>

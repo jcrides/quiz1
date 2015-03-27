@@ -1,0 +1,22 @@
+<div class="center-me">
+  <h1 class="headline">
+      <span class="view">View</span>
+      <span class="the">the</span>
+      <span class="red">r</span>
+      <span class="orange">a</span>
+      <span class="yellow">i</span>
+      <span class="green">n</span>
+      <span class="blue">b</span>
+      <span class="indigo">o</span>
+      <span class="violet">w!</span>
+  </h1>
+  <%= button_to "Click me!", new_homepage_path, :method => :get %>
+</div>
+<br>
+<div class="center-me">
+  <% if @homepages.present? %>
+    <%= @homepages.name %>
+    was here and likes
+    <%= @homepages.animal %>s.
+  <% end %>
+</div>
